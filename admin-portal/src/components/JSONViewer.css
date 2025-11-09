@@ -1,0 +1,83 @@
+.json-viewer-container {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.json-viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.json-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.format-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.format-btn:hover {
+  background: #5568d3;
+}
+
+.json-textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.2s;
+  background-color: #fafafa;
+  color: #333;
+  -webkit-text-fill-color: #333;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+.json-textarea::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.json-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: #ffffff;
+  color: #333;
+  -webkit-text-fill-color: #333;
+}
+
+.json-textarea.error {
+  border-color: #e74c3c;
+  background-color: #fff5f5;
+  color: #333;
+  -webkit-text-fill-color: #333;
+}
+
+.json-error {
+  margin-top: 0.5rem;
+  color: #e74c3c;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
